@@ -26,7 +26,6 @@ public class MessageService {
 
 	public Message addMessage(Message message) {
 		message.setId(messages.size() + 1);
-//		message.setCreated(null);
 		messages.put(message.getId(), message);
 		return message;
 	}
@@ -39,7 +38,7 @@ public class MessageService {
 		return message;
 	}
 
-	public Message removeMessage(long id) {
+	public Message deleteMessage(long id) {
 		return messages.remove(id);
 	}
 
